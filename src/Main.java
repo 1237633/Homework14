@@ -4,8 +4,10 @@ public class Main {
         Bicycle b1 = new Bicycle("Aist", 2);
         Car c1 = new Car("Audi", 4);
 
-        Transport[] transports = {t1, b1, c1};
-        for (Transport transport : transports) {
+        ServiceStation s1 = new Bicycle("Stels", 2);
+
+        ServiceStation[] transports = {t1, b1, c1, s1};
+        for (ServiceStation transport : transports) {
             transport.check();
         }
     }

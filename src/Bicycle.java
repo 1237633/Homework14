@@ -3,21 +3,6 @@ public class Bicycle extends Transport {
         super(modelName, wheelsCount);
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-
-    }
-
-    @Override
-    public void checkTrailer() {
-        throw new IllegalArgumentException("Неприменимо к данному типу ТС!");
-    }
-
-    @Override
-    public void checkEngine() {
-        throw new IllegalArgumentException("Неприменимо к данному типу ТС!");
-    }
-
     @Override
     public void check(){
         System.out.println("Обслуживаем " + getModelName());

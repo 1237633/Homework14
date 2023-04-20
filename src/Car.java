@@ -3,13 +3,11 @@ public class Car extends Transport{
         super(modelName, wheelsCount);
     }
 
+
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
-    @Override
-    public void checkTrailer() {
-        throw new IllegalArgumentException("Неприменимо к данному типу ТС!");
-    }
+
     @Override
     public void check(){
         System.out.println("Обслуживаем " + getModelName());

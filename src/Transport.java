@@ -14,4 +14,16 @@ public abstract class Transport implements ServiceStation{
     public int getWheelsCount() {
         return wheelsCount;
     }
+
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
+
+    }
+
+
+
+
+
 }
+
+

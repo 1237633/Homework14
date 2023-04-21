@@ -1,24 +1,8 @@
-public abstract class Transport implements ServiceStation{
-    private final String modelName;
-    private final int wheelsCount;
+public interface Transport{
 
-    public Transport(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
-    }
+    void service();
 
-    public String getModelName() {
-        return modelName;
-    }
 
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-
-    }
 
 
 

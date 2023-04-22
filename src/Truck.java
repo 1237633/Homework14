@@ -8,9 +8,14 @@ public class Truck extends MotorizedTransport {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
+
     @Override
-    public void service() {
-        ServiceStation.check(this);
+    public void check() {
+        serviceWheels();
+        checkEngine();
+        checkTrailer();
+        System.out.println("--------------------------------------------------");
     }
+
 
 }

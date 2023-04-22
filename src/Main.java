@@ -1,11 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        Truck t1 = new Truck("Kamaz", 8);
-        Bicycle b1 = new Bicycle("Aist", 2);
-        Car c1 = new Car("Audi", 4);
+        Transport[] transports = {
+                new Truck("Kamaz", 8),
+                new Bicycle("Aist", 2),
+                new Car("Audi", 4),
+                new ElectricCar("Mercedes EQS", 4),
+                new Boat("Abramovich 's yacht")
+        };
 
-        t1.service();
-        b1.service();
-        c1.service();
+        ServiceStation sto = new ServiceStation();
+
+        for (Transport transport : transports) {
+            sto.service(transport);
+        }
+
     }
 }

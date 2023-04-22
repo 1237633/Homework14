@@ -21,6 +21,20 @@ public abstract class WheeledTransport implements Transport {
 
     }
 
+    public void serviceWheels() {
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
+
+    }
+
+    @Override
+    public void check() {
+        System.out.println("Обслуживаем " + getModelName());
+        serviceWheels();
+        System.out.println("--------------------------------------------------");
+    }
+
 
 }
 

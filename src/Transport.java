@@ -1,12 +1,5 @@
-public interface Transport{
-
-    void service();
-
-
-
-
-
-
+public interface Transport {
+    void check();
 
 }
 
